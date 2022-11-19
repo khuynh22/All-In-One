@@ -1,0 +1,68 @@
+<!--
+All In One Application
+Group 11
+-->
+<!DOCTYPE html>
+<html>
+<!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+-->
+
+<script>
+    var element = ""
+</script>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        function Enter(event) {
+            // 13 is the keycode for "enter"
+            if (event.keyCode == 13 && event.shiftKey) {
+                document.getElementById("d").innerHTML = "Triggered enter+shift";
+            }
+            if (event.keyCode == 13 && !event.shiftKey) {
+                document.getElementById("d").innerHTML = "Triggered enter";
+            }
+        }
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <h2 id="Prompt">
+                    Send a message to
+                    <span style="color: #c365e3;">ZETA</span>
+                </h2>
+            </div>
+            <div id="input">
+                <textarea id="ip" placeholder="Type here..." onkeypress="Enter(event)"></textarea>
+            </div>
+            <script>
+                document.getElementById("ip").value = window.localStorage.getItem('val')
+            </script>
+            <button onclick="test();
+                             window.location.href = 'send.html';" id="button1"
+                style="margin-top: -46px; margin-left: 240px; background-color: #AFE2B1; color: #438A46;">
+                SEND
+            </button>
+
+            <button id="button" onclick="window.location.href = 'selectContact.html';" style="margin-top: 29px; 
+                margin-left: 0px;
+                border-radius: 0; 
+                border-top-right-radius: 25px;
+                border-left: 0px;
+                border-bottom: 0px;">
+                <p id="other">BACK</p>
+            </button>
+            <button id="button" onclick="window.location.href = 'exit.html';"
+                style="margin-top: 29px; color: red; background-color: rgb(234, 173, 173); margin-left: 142px;  border-radius: 0; border-top-left-radius: 25px; border-right: 0px; border-bottom: 0px;">
+                <p id="other">EXIT</p>
+            </button>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,86 @@
+body {
+  width: 390px;
+  height: 844px;
+  border: 3px solid black;
+  margin: 0;
+}
+
+textarea {
+  height: 433px;
+  width: 318px;
+  font-size: 20px;
+  border: 0px;
+  margin: 10px;
+  padding: 0px;
+}
+#input {
+  height: 483px;
+  width: 337px;
+  border: 3px solid;
+  border-style: dashed;
+  border-color: #c365e3;
+  margin-top: 25px;
+  margin-left: 26.5px;
+}
+#Prompt {
+  font-size: 34px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+#button {
+  width: 122px;
+  height: 122px;
+  margin-top: 56px;
+  margin-left: 32px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+}
+
+#other {
+  margin-top: 25px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#button1 {
+  width: 146px;
+  height: 82px;
+  margin-top: 56px;
+  margin-left: 32px;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  font-size: 34px;
+  text-align: center;
+  vertical-align: center;
+  padding: 50;
+}
+
+.box {
+  width: 326px;
+  height: 100x;
+  border: 3px solid rgba(64, 82, 146, 0.583);
+  background-color: rgba(64, 82, 146, 0.583);
+  border-radius: 25px;
+  margin-left: 32px;
+  margin-top: 32px
+}
+
+#chat-box {
+  border: 3px solid #1B55E9;
+  background-color: #BFC6EA;
+  margin-left: 80px;
+  width: 300px;
+}
+
+#selectButton {
+  width: 56px;
+  height: 56px;
+}
+#name {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 150px;
+  margin-top: 32px
+}
